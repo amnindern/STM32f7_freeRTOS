@@ -1,0 +1,24 @@
+18:52:06 **** Incremental Build of configuration Debug for project C1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/Config" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/OS" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/SEGGER" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/Config" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/OS" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/Patch" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/SEGGER/SEGGER/Syscalls" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/FreeRTOS" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/FreeRTOS/include" -I"D:/GitHub/STM32f7_freeRTOS/C1/ThirdParty/FreeRTOS/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "C1.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\GitHub\STM32f7_freeRTOS\C1\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="C1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: C1.elf
+ 
+arm-none-eabi-objdump -h -S  C1.elf  > "C1.list"
+arm-none-eabi-objcopy  -O binary  C1.elf  "C1.bin"
+arm-none-eabi-size   C1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22464	     28	  84500	 106992	  1a1f0	C1.elf
+Finished building: default.size.stdout
+ 
+Finished building: C1.bin
+ 
+Finished building: C1.list
+ 
+18:52:11 **** Incremental Build of configuration Debug for project C1 ****
+make -j8 all 
+arm-none-eabi-size   C1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22464	     28	  84500	 106992	  1a1f0	C1.elf
+Finished building: default.size.stdout
+ 
