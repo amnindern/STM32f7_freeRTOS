@@ -213,3 +213,18 @@ java.io.FileNotFoundException: D:\GitHub\STM32f7_freeRTOS\C1\Records\001.SVdat (
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
 	at org.eclipse.cdt.debug.ui.memory.transport.RAWBinaryExporter$7.run(RAWBinaryExporter.java:467)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-06-06 12:36:13.618 -----------------------------------------------
+eclipse.buildId=Version 1.4.2
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-06-06 12:39:43.090
+!MESSAGE Log4j initialized with config file D:\GitHub\STM32f7_freeRTOS\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-06-06 12:39:55.099
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-06-06 12:39:55.566
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
